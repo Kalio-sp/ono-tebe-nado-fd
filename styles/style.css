@@ -1,3 +1,4 @@
+/* место для вашего кода */
 .header {
   padding: 92px 50px 96px 50px;
   display: grid;
@@ -15,9 +16,11 @@
   gap: 13px;
   list-style: none;
 }
+
 .header__links-list-item:first-child:before {
   content: none;
 }
+
 .header__links-list-item {
   font-weight: 400;
   font-size: 18px;
@@ -26,6 +29,7 @@
   align-items: center;
   gap: 10px;
 }
+
 .header__links-list-item:before {
   content: "";
   display: block;
@@ -48,12 +52,13 @@
   width: 148px;
 }
 
-.header__address {
+.address {
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 135%;
   color: #000;
-  margin: 0 37px;
+  margin: 7px 37px 0;
 }
 
 .overlay {
@@ -61,7 +66,6 @@
   background-repeat: no-repeat;
   fill: #000;
   width: 1100px;
-  height: 757px;
   position: absolute;
   z-index: -1;
   background-size: cover;
@@ -71,14 +75,13 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
+  background-color: black;
 }
 
 .cover {
-  height: 100%;
   position: relative;
-  margin-bottom: 50px;
-  padding-bottom: 180px;
+  margin-bottom: 180px;
 }
 
 .cover__title {
@@ -113,6 +116,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 50px;
 }
 
 .cover__description-text {
@@ -139,9 +143,8 @@
 .lots {
   padding-bottom: 120px;
   padding-left: 24px;
-  padding-right: 24px;
   background-color: #ffffff;
-  font-family: "Arial", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .lots__heading {
@@ -208,8 +211,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   height: 100%;
   z-index: 1;
+}
+
+.card_inner .overlay {
+  background-image: none;
 }
 
 .card h3 {
@@ -222,12 +230,11 @@
   color: #fff;
 }
 
-.overlay_card {
+.overlay {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .lots__look-more-link {
@@ -244,7 +251,6 @@
 
 .about {
   width: 1052px;
-  min-height: 595px;
   padding-bottom: 180px;
 }
 
@@ -295,10 +301,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 0 50px 82px 50px;
-}
-
-.footer_menu {
+  padding: 0 51px 82px 13px;
 }
 
 .footer__address {
@@ -306,6 +309,10 @@
   font-size: 18px;
   line-height: 135%;
   color: #000;
+}
+
+.footer_menu {
+  margin: 10px 35px 0 0;
 }
 
 .footer__menu-list {
@@ -326,6 +333,7 @@
   display: flex;
   gap: 48px;
   list-style: none;
+  margin-top: 9px;
 }
 
 .footer__social-list img {
