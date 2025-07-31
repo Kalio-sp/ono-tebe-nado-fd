@@ -43,8 +43,12 @@
   color: inherit;
 }
 
-.header__links-list-item_no-bullit {
+.header__links-list-item_no-bullit{
   list-style: none;
+}
+
+.header__links-list-item_no-bullit .header__link {
+    text-decoration: none;
 }
 
 .header__logo {
@@ -307,6 +311,10 @@
   font-size: 18px;
   text-align: center;
   color: #000;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
 }
 
 .footer__social-list {
